@@ -1,0 +1,136 @@
+  [1m[36m (153.2ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (334.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCategories (20140126104022)
+  [1m[35m (134.2ms)[0m  CREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `image` text, `description` text, `classic` tinyint(1), `contemporary` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (33.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140126104022"]]
+  [1m[36m (66.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSubCategories (20140126104152)
+  [1m[35m (87.3ms)[0m  CREATE TABLE `sub_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `image` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140126104152"]]
+  [1m[36m (49.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateProducts (20140126104337)
+  [1m[35m (107.6ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `height` varchar(255), `width` varchar(255), `price` varchar(255), `image` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140126104337"]]
+  [1m[36m (50.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateVariationImages (20140126104533)
+  [1m[35m (130.6ms)[0m  CREATE TABLE `variation_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140126104533"]]
+  [1m[36m (45.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.7ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateVariationImages (20140126104533)
+  [1m[36m (81.1ms)[0m  [1mDROP TABLE `variation_images`[0m
+  [1m[35mSQL (58.7ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20140126104533'
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateVariationImages (20140126104533)
+  [1m[35m (154.9ms)[0m  CREATE TABLE `variation_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140126104533"]]
+  [1m[36m (89.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.9ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateVariationImages (20140126104533)
+  [1m[36m (76.8ms)[0m  [1mDROP TABLE `variation_images`[0m
+  [1m[35mSQL (61.7ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20140126104533'
+Migrating to CreateProducts (20140126104337)
+  [1m[36m (64.6ms)[0m  [1mDROP TABLE `products`[0m
+  [1m[35mSQL (43.3ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20140126104337'
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateProducts (20140126104337)
+  [1m[35m (107.6ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `height` varchar(255), `width` varchar(255), `price` varchar(255), `image` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140126104337"]]
+  [1m[36m (51.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateVariationImages (20140126104533)
+  [1m[35m (98.4ms)[0m  CREATE TABLE `variation_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140126104533"]]
+  [1m[36m (39.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to CreateVariationImages (20140126104533)
+  [1m[36m (105.9ms)[0m  [1mDROP TABLE `variation_images`[0m
+  [1m[35mSQL (94.7ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20140126104533'
+Migrating to CreateProducts (20140126104337)
+  [1m[36m (108.8ms)[0m  [1mDROP TABLE `products`[0m
+  [1m[35mSQL (65.4ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20140126104337'
+Migrating to CreateSubCategories (20140126104152)
+  [1m[36m (65.0ms)[0m  [1mDROP TABLE `sub_categories`[0m
+  [1m[35mSQL (66.2ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20140126104152'
+Migrating to CreateCategories (20140126104022)
+  [1m[36m (86.9ms)[0m  [1mDROP TABLE `categories`[0m
+  [1m[35mSQL (98.7ms)[0m  DELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20140126104022'
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateCategories (20140126104022)
+  [1m[35m (162.3ms)[0m  CREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `image` text, `description` text, `classic` tinyint(1), `contemporary` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140126104022"]]
+  [1m[36m (65.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSubCategories (20140126104152)
+  [1m[35m (187.7ms)[0m  CREATE TABLE `sub_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `image` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140126104152"]]
+  [1m[36m (68.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateProducts (20140126104337)
+  [1m[35m (136.3ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `height` varchar(255), `width` varchar(255), `price` varchar(255), `image` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140126104337"]]
+  [1m[36m (60.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateVariationImages (20140126104533)
+  [1m[35m (143.0ms)[0m  CREATE TABLE `variation_images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `image` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140126104533"]]
+  [1m[36m (49.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddCategoryIdSubCategory (20140126114532)
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mSQL (21.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES (?)[0m  [["version", "20140126114532"]]
+  [1m[35m (87.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+Migrating to AddCategoryIdSubCategory (20140126114532)
+  [1m[36mSQL (94.8ms)[0m  [1mDELETE FROM `schema_migrations` WHERE `schema_migrations`.`version` = '20140126114532'[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddCategoryIdSubCategory (20140126114532)
+  [1m[35m (437.5ms)[0m  ALTER TABLE `sub_categories` ADD `category_id` int(11)
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140126114532"]]
+  [1m[36m (63.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (24.8ms)[0m  INSERT INTO `sub_categories` (`created_at`, `updated_at`) VALUES (?, ?)  [["created_at", Sun, 26 Jan 2014 11:55:23 UTC +00:00], ["updated_at", Sun, 26 Jan 2014 11:55:23 UTC +00:00]]
+  [1m[36m (76.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  BEGIN
+  [1m[36mSQL (3.3ms)[0m  [1mINSERT INTO `sub_categories` (`created_at`, `updated_at`) VALUES (?, ?)[0m  [["created_at", Sun, 26 Jan 2014 11:55:46 UTC +00:00], ["updated_at", Sun, 26 Jan 2014 11:55:46 UTC +00:00]]
+  [1m[35m (64.0ms)[0m  COMMIT
+  [1m[36mCategory Load (1.7ms)[0m  [1mSELECT `categories`.* FROM `categories` ORDER BY `categories`.`id` DESC LIMIT 1[0m
+  [1m[35mSubCategory Load (1.1ms)[0m  SELECT `sub_categories`.* FROM `sub_categories` ORDER BY `sub_categories`.`id` DESC LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (17.5ms)[0m  INSERT INTO `categories` (`created_at`, `updated_at`) VALUES (?, ?)  [["created_at", Sun, 26 Jan 2014 12:08:03 UTC +00:00], ["updated_at", Sun, 26 Jan 2014 12:08:03 UTC +00:00]]
+  [1m[36m (79.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO `sub_categories` (`created_at`, `updated_at`) VALUES (?, ?)[0m  [["created_at", Sun, 26 Jan 2014 12:08:36 UTC +00:00], ["updated_at", Sun, 26 Jan 2014 12:08:36 UTC +00:00]]
+  [1m[35m (77.6ms)[0m  COMMIT
+  [1m[36mSubCategory Load (35.2ms)[0m  [1mSELECT `sub_categories`.* FROM `sub_categories` WHERE `sub_categories`.`category_id` = ?[0m  [["category_id", 1]]
+  [1m[35mCategory Load (2.3ms)[0m  SELECT `categories`.* FROM `categories` ORDER BY `categories`.`id` DESC LIMIT 1
+  [1m[36mCategory Load (2.3ms)[0m  [1mSELECT `categories`.* FROM `categories` ORDER BY `categories`.`id` DESC LIMIT 1[0m
