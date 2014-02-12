@@ -1,0 +1,2 @@
+class VariationImagesController < ApplicationController
+end
