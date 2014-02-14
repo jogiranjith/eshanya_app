@@ -6,6 +6,7 @@ class CreateCategories < ActiveRecord::Migration
       t.text :description
       t.boolean :classic
       t.boolean :contemporary
+
       t.timestamps
     end
   end

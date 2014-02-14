@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140126114532) do
+ActiveRecord::Schema.define(version: 20140209093300) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 20140126114532) do
     t.string   "width"
     t.string   "price"
     t.text     "image"
+    t.integer  "category_id"
+    t.integer  "sub_category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -36,13 +38,14 @@ ActiveRecord::Schema.define(version: 20140126114532) do
   create_table "sub_categories", force: true do |t|
     t.string   "name"
     t.text     "image"
+    t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "category_id"
   end
 
-  create_table "variation_images", force: true do |t|
-    t.text     "image"
+  create_table "variationimages", force: true do |t|
+    t.text     "variation_images"
+    t.integer  "product_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

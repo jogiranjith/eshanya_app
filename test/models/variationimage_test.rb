@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class VariationImageTest < ActiveSupport::TestCase
+class VariationimageTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
