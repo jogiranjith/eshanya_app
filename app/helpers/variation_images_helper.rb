@@ -1,0 +1,2 @@
+module VariationImagesHelper
+end
