@@ -8,7 +8,7 @@ development:
   encoding: utf8
   database: eshanya_db
   username: root
-  password: myclouds123
+  password: clouds123
   pool: 5
   timeout: 5000
 

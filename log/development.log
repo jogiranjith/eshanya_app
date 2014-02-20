@@ -401,3 +401,1147 @@ Migrating to CreateUsers (20140212061256)
   [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
 >>>>>>> cd1bd48cbd6394e2bc37b6c56a8155fbe9cfc287
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-19 22:27:59 +0530
+
+Mysql::Error (Access denied for user 'root'@'localhost' (using password: YES)):
+  activerecord (4.0.1) lib/active_record/connection_adapters/mysql_adapter.rb:533:in `real_connect'
+  activerecord (4.0.1) lib/active_record/connection_adapters/mysql_adapter.rb:533:in `connect'
+  activerecord (4.0.1) lib/active_record/connection_adapters/mysql_adapter.rb:131:in `initialize'
+  activerecord (4.0.1) lib/active_record/connection_adapters/mysql_adapter.rb:36:in `new'
+  activerecord (4.0.1) lib/active_record/connection_adapters/mysql_adapter.rb:36:in `mysql_connection'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.1) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.1) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.1) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.1) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.1) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.1) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__874713456__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (66.3ms)
+  [1m[36m (179.7ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (332.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (23.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateVariationImages (20140126104533)
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateVariationimages (20140209093207)
+  [1m[35m (157.3ms)[0m  CREATE TABLE `variationimages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `variation_images` text, `product_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (44.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140209093207"]]
+  [1m[36m (63.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateProducts (20140209093228)
+  [1m[35m (118.8ms)[0m  CREATE TABLE `products` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `height` varchar(255), `width` varchar(255), `price` varchar(255), `image` text, `category_id` int(11), `sub_category_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140209093228"]]
+  [1m[36m (60.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSubCategories (20140209093249)
+  [1m[35m (121.0ms)[0m  CREATE TABLE `sub_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `image` text, `category_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140209093249"]]
+  [1m[36m (61.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCategories (20140209093300)
+  [1m[35m (140.3ms)[0m  CREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `image` text, `description` text, `classic` tinyint(1), `contemporary` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140209093300"]]
+  [1m[36m (61.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20140212061256)
+  [1m[35m (143.1ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255) DEFAULT '', `username` varchar(255) DEFAULT '', `email` varchar(255) DEFAULT '', `about` varchar(255) DEFAULT '', `encrypted_password` varchar(255) DEFAULT '', `city` varchar(255) DEFAULT '', `reset_password_token` varchar(255), `reset_password_sent_at` time, `remember_created_at` time, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` time, `last_sign_in_at` time, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `stripe_customer_id` varchar(255), `deleted` tinyint(1) DEFAULT 0, `confirmation_token` varchar(255), `confirmed_at` time, `confirmation_sent_at` time, `unconfirmed_email` varchar(255), `failed_attempts` int(11) DEFAULT 0, `unlock_token` varchar(255), `locked_at` time, `authentication_token` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140212061256"]]
+  [1m[36m (61.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-19 22:32:29 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (4.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/railties-4.0.1/lib/rails/templates/rails/welcome/index.html.erb (7.2ms)
+Completed 200 OK in 183ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-02-19 22:32:35 +0530
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-19 22:32:35 +0530
+Processing by Admin::DashboardController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/widgets/_default.html.erb (3.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/index.html.erb within layouts/admin/base (232.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (419.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (2.9ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (1.3ms)
+Completed 200 OK in 1064ms (Views: 1054.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-19 22:32:36 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:32:36 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-19 22:32:36 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-19 22:32:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:32:36 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-19 22:32:37 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-19 22:32:37 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-19 22:32:37 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:32:37 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-02-19 22:32:37 +0530
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-19 22:32:41 +0530
+Processing by Admin::DashboardController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/widgets/_default.html.erb (0.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/index.html.erb within layouts/admin/base (10.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (6.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (1.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-19 22:32:41 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:32:41 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-19 22:32:41 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-19 22:32:41 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:32:41 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-19 22:32:41 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-19 22:32:41 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-19 22:32:41 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:32:41 +0530
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-19 22:33:28 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (4.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::DashboardController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/widgets/_default.html.erb (47.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/index.html.erb within layouts/admin/base (147.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (71.9ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (9.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (1.5ms)
+Completed 200 OK in 595ms (Views: 526.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:29 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:29 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:29 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:29 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:29 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:29 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:29 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:29 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:29 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-02-19 22:33:29 +0530
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2014-02-19 22:33:32 +0530
+Processing by Admin::CategoriesController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_index.html.erb (0.7ms)
+  [1m[35m (0.9ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `categories` LIMIT 25 OFFSET 0) subquery_for_count
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/index.html.erb within layouts/admin/base (16.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (9.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (8.9ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_sidebar.html.erb (3.2ms)
+Completed 200 OK in 171ms (Views: 148.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:32 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:32 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:32 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:32 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:32 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:32 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:32 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:32 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:32 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-02-19 22:33:33 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-02-19 22:33:33 +0530
+
+
+Started GET "/admin/categories/new" for 127.0.0.1 at 2014-02-19 22:33:34 +0530
+Processing by Admin::CategoriesController#new as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_new.html.erb (0.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_form_javascripts.html.erb (0.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_errors.html.erb (3.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (48.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_text.html.erb (4.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_text.html.erb (0.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_boolean.html.erb (5.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_boolean.html.erb (0.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_form.html.erb (129.9ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_modals.html.erb (7.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/new.html.erb within layouts/admin/base (153.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (8.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (6.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_sidebar.html.erb (1.5ms)
+Completed 200 OK in 222ms (Views: 202.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:35 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:35 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:35 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:35 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:35 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:35 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:35 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:35 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:35 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-02-19 22:33:35 +0530
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2014-02-19 22:33:42 +0530
+Processing by Admin::CategoriesController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_index.html.erb (0.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `categories` LIMIT 25 OFFSET 0) subquery_for_count[0m
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/index.html.erb within layouts/admin/base (14.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (12.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (10.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_sidebar.html.erb (1.1ms)
+Completed 200 OK in 98ms (Views: 74.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:43 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:43 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:43 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:43 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:43 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:43 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:43 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:43 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-02-19 22:33:43 +0530
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-19 22:33:45 +0530
+Processing by Admin::DashboardController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/widgets/_default.html.erb (7.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/index.html.erb within layouts/admin/base (9.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (11.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (8.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+Completed 200 OK in 180ms (Views: 159.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:45 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:45 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:45 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:45 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:45 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:45 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:45 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:45 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-02-19 22:33:45 +0530
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2014-02-19 22:33:48 +0530
+Processing by Admin::UsersController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_index.html.erb (0.1ms)
+  [1m[35m (0.7ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `users` LIMIT 25 OFFSET 0) subquery_for_count
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/index.html.erb within layouts/admin/base (12.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (6.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (7.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_sidebar.html.erb (1.1ms)
+Completed 200 OK in 73ms (Views: 47.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:48 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:48 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:48 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:48 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:48 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:48 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:48 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:48 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:48 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-02-19 22:33:48 +0530
+
+
+Started GET "/admin/users/new" for 127.0.0.1 at 2014-02-19 22:33:50 +0530
+Processing by Admin::UsersController#new as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_new.html.erb (0.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_form_javascripts.html.erb (0.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_errors.html.erb (0.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.9ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (5.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_password.html.erb (17.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (1.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_password.html.erb (3.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_password.html.erb (0.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_time.html.erb (57.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_time.html.erb (11.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_boolean.html.erb (4.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_time.html.erb (5.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_time.html.erb (5.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_time.html.erb (6.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_form.html.erb (480.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_modals.html.erb (47.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/new.html.erb within layouts/admin/base (542.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (9.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (15.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (2.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_sidebar.html.erb (3.5ms)
+Completed 200 OK in 614ms (Views: 599.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:51 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:51 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:51 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:51 +0530
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:51 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:51 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:51 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:51 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:51 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-02-19 22:33:52 +0530
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-19 22:33:55 +0530
+Processing by Admin::DashboardController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/widgets/_default.html.erb (5.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/index.html.erb within layouts/admin/base (13.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (12.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (14.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+Completed 200 OK in 95ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:55 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:55 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:55 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:33:55 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:55 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:55 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:55 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:55 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:33:55 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-02-19 22:33:56 +0530
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-02-19 22:38:48 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (12.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-19 22:38:48 +0530
+Processing by Admin::DashboardController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/widgets/_default.html.erb (57.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/index.html.erb within layouts/admin/base (206.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (95.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (13.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (1.5ms)
+Completed 200 OK in 789ms (Views: 716.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-19 22:38:49 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-19 22:38:49 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-19 22:38:49 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-19 22:38:49 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-19 22:38:49 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-19 22:38:50 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-19 22:38:50 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-19 22:38:50 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-19 22:38:50 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-02-19 22:38:50 +0530
+
+
+Started GET "/admin" for 192.168.1.9 at 2014-02-19 22:41:17 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/admin/dashboard" for 192.168.1.9 at 2014-02-19 22:41:17 +0530
+Processing by Admin::DashboardController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/widgets/_default.html.erb (38.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/index.html.erb within layouts/admin/base (136.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (71.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (7.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (1.5ms)
+Completed 200 OK in 556ms (Views: 494.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:18 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:18 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:18 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:18 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:18 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:18 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:18 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:18 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:18 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings.png" for 192.168.1.9 at 2014-02-19 22:41:18 +0530
+
+
+Started GET "/admin/categories" for 192.168.1.9 at 2014-02-19 22:41:30 +0530
+Processing by Admin::CategoriesController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_index.html.erb (0.6ms)
+  [1m[35m (0.7ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `categories` LIMIT 25 OFFSET 0) subquery_for_count
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/index.html.erb within layouts/admin/base (20.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (7.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (6.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_sidebar.html.erb (3.2ms)
+Completed 200 OK in 81ms (Views: 63.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:30 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:30 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:30 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:30 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:30 +0530
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:30 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:30 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:30 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:30 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings-white.png" for 192.168.1.9 at 2014-02-19 22:41:30 +0530
+
+
+Started GET "/admin/dashboard" for 192.168.1.9 at 2014-02-19 22:41:35 +0530
+Processing by Admin::DashboardController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/widgets/_default.html.erb (4.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/index.html.erb within layouts/admin/base (18.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (12.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (14.9ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+Completed 200 OK in 111ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:35 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:35 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:35 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:35 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:35 +0530
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:35 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:35 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:35 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:35 +0530
+
+
+Started GET "/admin/products" for 192.168.1.9 at 2014-02-19 22:41:37 +0530
+Processing by Admin::ProductsController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_index.html.erb (0.1ms)
+  [1m[36m (1.6ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `products` LIMIT 25 OFFSET 0) subquery_for_count[0m
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/index.html.erb within layouts/admin/base (16.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (6.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (10.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_sidebar.html.erb (2.6ms)
+Completed 200 OK in 78ms (Views: 55.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:37 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:37 +0530
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:37 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:37 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:37 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:37 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:37 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:37 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:37 +0530
+
+
+Started GET "/admin/products/new" for 192.168.1.9 at 2014-02-19 22:41:44 +0530
+Processing by Admin::ProductsController#new as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_new.html.erb (4.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_form_javascripts.html.erb (4.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_errors.html.erb (11.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (222.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (2.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (3.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_text.html.erb (7.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_form.html.erb (356.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_modals.html.erb (18.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/new.html.erb within layouts/admin/base (401.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (9.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (10.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_sidebar.html.erb (1.1ms)
+Completed 200 OK in 488ms (Views: 468.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:45 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:45 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:45 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:45 +0530
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 192.168.1.9 at 2014-02-19 22:41:45 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:45 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:45 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 192.168.1.9 at 2014-02-19 22:41:45 +0530
+
+
+Started GET "/admin/dashboard" for 192.168.1.9 at 2014-02-19 22:42:23 +0530
+Processing by Admin::DashboardController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/widgets/_default.html.erb (5.9ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/index.html.erb within layouts/admin/base (17.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (15.9ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (6.9ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+Completed 200 OK in 124ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:23 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:23 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:23 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:23 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:23 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:23 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:23 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:23 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:23 +0530
+
+
+Started GET "/admin/users" for 192.168.1.9 at 2014-02-19 22:42:26 +0530
+Processing by Admin::UsersController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_index.html.erb (0.1ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `users` LIMIT 25 OFFSET 0) subquery_for_count
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/index.html.erb within layouts/admin/base (15.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (9.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (9.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_sidebar.html.erb (1.8ms)
+Completed 200 OK in 116ms (Views: 87.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:27 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:27 +0530
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:27 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:27 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:27 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:27 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:27 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:27 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:27 +0530
+
+
+Started GET "/admin/dashboard" for 192.168.1.9 at 2014-02-19 22:42:30 +0530
+Processing by Admin::DashboardController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/widgets/_default.html.erb (4.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/index.html.erb within layouts/admin/base (9.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (6.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (5.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+Completed 200 OK in 62ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:30 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:30 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:30 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:30 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:30 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:30 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:30 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:30 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:30 +0530
+
+
+Started GET "/admin/variationimages" for 192.168.1.9 at 2014-02-19 22:42:32 +0530
+Processing by Admin::VariationimagesController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_index.html.erb (0.1ms)
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `variationimages` LIMIT 25 OFFSET 0) subquery_for_count[0m
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/index.html.erb within layouts/admin/base (9.9ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (8.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (5.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_sidebar.html.erb (1.4ms)
+Completed 200 OK in 153ms (Views: 46.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:32 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:32 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:32 +0530
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:32 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:32 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:32 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:32 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:32 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:32 +0530
+
+
+Started GET "/admin/dashboard" for 192.168.1.9 at 2014-02-19 22:42:34 +0530
+Processing by Admin::DashboardController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/widgets/_default.html.erb (7.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/index.html.erb within layouts/admin/base (12.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (7.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (6.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+Completed 200 OK in 67ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:35 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:35 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:35 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:35 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:35 +0530
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:35 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:35 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:35 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:35 +0530
+
+
+Started GET "/admin/dashboard" for 192.168.1.9 at 2014-02-19 22:42:40 +0530
+Processing by Admin::DashboardController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/widgets/_default.html.erb (12.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/index.html.erb within layouts/admin/base (21.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (8.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (5.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+Completed 200 OK in 72ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:40 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:40 +0530
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:40 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:40 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 192.168.1.9 at 2014-02-19 22:42:40 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:41 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:41 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:41 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 192.168.1.9 at 2014-02-19 22:42:41 +0530
+
+
+Started GET "/admin/users" for 192.168.1.9 at 2014-02-19 22:44:45 +0530
+Processing by Admin::UsersController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_index.html.erb (0.1ms)
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `users` LIMIT 25 OFFSET 0) subquery_for_count
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/index.html.erb within layouts/admin/base (14.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (30.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (6.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_sidebar.html.erb (1.4ms)
+Completed 200 OK in 221ms (Views: 154.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 192.168.1.9 at 2014-02-19 22:44:46 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 192.168.1.9 at 2014-02-19 22:44:46 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 192.168.1.9 at 2014-02-19 22:44:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.9 at 2014-02-19 22:44:46 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 192.168.1.9 at 2014-02-19 22:44:46 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 192.168.1.9 at 2014-02-19 22:44:46 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 192.168.1.9 at 2014-02-19 22:44:46 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 192.168.1.9 at 2014-02-19 22:44:46 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 192.168.1.9 at 2014-02-19 22:44:46 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings-white.png" for 192.168.1.9 at 2014-02-19 22:44:46 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings.png" for 192.168.1.9 at 2014-02-19 22:44:46 +0530
+
+
+Started GET "/admin/users/new" for 192.168.1.9 at 2014-02-19 22:44:48 +0530
+Processing by Admin::UsersController#new as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_new.html.erb (0.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_form_javascripts.html.erb (0.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_errors.html.erb (0.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (2.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (1.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_password.html.erb (103.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (1.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_password.html.erb (1.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_password.html.erb (0.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (1.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_time.html.erb (116.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_time.html.erb (12.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (1.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (1.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_boolean.html.erb (43.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (1.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_time.html.erb (15.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_time.html.erb (6.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_time.html.erb (7.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/templates/_string.html.erb (0.6ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_form.html.erb (796.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_modals.html.erb (43.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/new.html.erb within layouts/admin/base (882.3ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (5.9ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (4.9ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_sidebar.html.erb (1.0ms)
+Completed 200 OK in 936ms (Views: 926.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 192.168.1.9 at 2014-02-19 22:44:49 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 192.168.1.9 at 2014-02-19 22:44:49 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 192.168.1.9 at 2014-02-19 22:44:49 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.1.9 at 2014-02-19 22:44:49 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 192.168.1.9 at 2014-02-19 22:44:49 +0530
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 192.168.1.9 at 2014-02-19 22:44:49 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 192.168.1.9 at 2014-02-19 22:44:49 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 192.168.1.9 at 2014-02-19 22:44:49 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 192.168.1.9 at 2014-02-19 22:44:49 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings-white.png" for 192.168.1.9 at 2014-02-19 22:44:49 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings.png" for 192.168.1.9 at 2014-02-19 22:44:49 +0530

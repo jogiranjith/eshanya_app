@@ -32,6 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem "typus", :git => "git://github.com/fesplugas/typus.git"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

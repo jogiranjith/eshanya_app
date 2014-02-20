@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+Product:
+  fields:
+    default: name, height, width, price, image, category_id, sub_category_id
+    form: name, height, width, price, image, category_id, sub_category_id
+  relationships: variation_images
+  application: Application

@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+Category:
+  fields:
+    default: name, image, description, classic, contemporary
+    form: name, image, description, classic, contemporary
+  relationships: sub_categories, products
+  application: Application
