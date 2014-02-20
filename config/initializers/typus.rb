@@ -1,7 +1,7 @@
 Typus.setup do |config|
 
   # Application name.
-   config.admin_title = "Eshanya"
+  config.admin_title = "Eshanya"
   # config.admin_sub_title = ""
 
   # When mailer_sender is set, password recover is enabled. This email
@@ -23,11 +23,11 @@ Typus.setup do |config|
 
   # Define authentication: +:none+, +:http_basic+, +:session+
   # Run `rails g typus:migration` if want +:session+
-  # config.authentication = :none
+  config.authentication = :devise
 
   # Define username and password for +:http_basic+ authentication.
-  # config.username = "admin"
-  # config.password = "columbia"
+   config.username = "admin"
+   config.password = "columbia"
 
   # Define subdomain to use instead of additional path.
   # config.subdomain = "admin"

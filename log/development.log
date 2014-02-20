@@ -1545,3 +1545,1469 @@ Started GET "/assets/img/glyphicons-halflings-white.png" for 192.168.1.9 at 2014
 
 
 Started GET "/assets/img/glyphicons-halflings.png" for 192.168.1.9 at 2014-02-19 22:44:49 +0530
+
+
+Started GET "/admn" for 127.0.0.1 at 2014-02-20 09:02:00 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (6.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActionController::RoutingError (No route matches [GET] "/admn"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (21.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (234.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-02-20 09:02:05 +0530
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-20 09:02:05 +0530
+Processing by Admin::DashboardController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/widgets/_default.html.erb (82.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/index.html.erb within layouts/admin/base (329.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (175.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (17.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (2.2ms)
+Completed 200 OK in 1078ms (Views: 963.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:02:07 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:02:07 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:07 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:07 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:02:07 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:07 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:07 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:07 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-02-20 09:02:07 +0530
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2014-02-20 09:02:10 +0530
+Processing by Admin::CategoriesController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/_index.html.erb (0.7ms)
+  [1m[35m (47.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `categories` LIMIT 25 OFFSET 0) subquery_for_count
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/resources/index.html.erb within layouts/admin/base (65.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (18.7ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (9.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (0.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/resources/_sidebar.html.erb (5.1ms)
+Completed 200 OK in 239ms (Views: 172.7ms | ActiveRecord: 48.9ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:02:11 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:02:11 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:11 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:11 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:11 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:02:11 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:11 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:11 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:11 +0530
+
+
+Started GET "/assets/img/glyphicons-halflings-white.png" for 127.0.0.1 at 2014-02-20 09:02:11 +0530
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-20 09:02:13 +0530
+Processing by Admin::DashboardController#index as HTML
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/widgets/_default.html.erb (5.9ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/dashboard/index.html.erb within layouts/admin/base (8.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/admin/shared/_head.html.erb (9.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_apps.html.erb (11.9ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/app/views/helpers/admin/base/_login_info.html.erb (3.7ms)
+Completed 200 OK in 61ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:02:13 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:02:13 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:13 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:13 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:02:13 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:13 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:13 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:13 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:02:13 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateDeviseUsers (20140220033518)
+  [1m[35m (258.0ms)[0m  CREATE TABLE `devise_users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (289.4ms)[0m  [1mCREATE UNIQUE INDEX `index_devise_users_on_email` ON `devise_users` (`email`) [0m
+  [1m[35m (232.9ms)[0m  CREATE UNIQUE INDEX `index_devise_users_on_reset_password_token` ON `devise_users` (`reset_password_token`) 
+  [1m[36mSQL (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (40.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES (?)  [["version", "20140220033518"]]
+  [1m[36m (73.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-20 09:09:35 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::DashboardController#index as HTML
+Completed 500 Internal Server Error in 74ms
+
+NoMethodError (undefined method `authenticate_admin_user!' for #<Admin::DashboardController:0xaab4e4c>):
+  /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/lib/typus/authentication/devise.rb:14:in `authenticate'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:417:in `_run__125571968__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__32142031__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.2ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-20 09:12:25 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::DashboardController#index as HTML
+Completed 500 Internal Server Error in 71ms
+
+NoMethodError (undefined method `authenticate_admin_user!' for #<Admin::DashboardController:0x9578fc4>):
+  /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/lib/typus/authentication/devise.rb:14:in `authenticate'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:417:in `_run__769957913__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__158918438__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-02-20 09:12:32 +0530
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-20 09:12:32 +0530
+Processing by Admin::DashboardController#index as HTML
+Completed 500 Internal Server Error in 31ms
+
+NoMethodError (undefined method `authenticate_admin_user!' for #<Admin::DashboardController:0xb72afd34>):
+  /home/ranjith/.rvm/gems/ruby-2.0.0-p195/bundler/gems/typus-d06f85c7b345/lib/typus/authentication/devise.rb:14:in `authenticate'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:417:in `_run__769957913__process_action__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.1) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.1) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.1) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.1) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__158918438__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (81.5ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-20 09:16:12 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.1) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.1) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:373:in `_run__661219235__call__callbacks'
+  activesupport (4.0.1) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/ranjith/.rvm/rubies/ruby-2.0.0-p195/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.5ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/ranjith/.rvm/gems/ruby-2.0.0-p195/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateAdminUsers (20140220034553)
+  [1m[35m (125.1ms)[0m  CREATE TABLE `admin_users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255) DEFAULT '' NOT NULL, `last_name` varchar(255) DEFAULT '' NOT NULL, `role` varchar(255) NOT NULL, `email` varchar(255) NOT NULL, `status` tinyint(1) DEFAULT 0, `token` varchar(255) NOT NULL, `password_digest` varchar(255) NOT NULL, `preferences` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (221.9ms)[0m  [1mCREATE UNIQUE INDEX `index_admin_users_on_email` ON `admin_users` (`email`) [0m
+  [1m[35mSQL (0.5ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES (?)[0m  [["version", "20140220034553"]]
+  [1m[35m (50.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-20 09:16:45 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::DashboardController#index as HTML
+Redirected to http://localhost:3000/admin/session/new
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 65ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at 2014-02-20 09:16:45 +0530
+Processing by Admin::SessionController#new as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM `admin_users`
+Redirected to http://localhost:3000/admin/account/new
+Filter chain halted as :create_an_account? rendered or redirected
+Completed 302 Found in 75ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/admin/account/new" for 127.0.0.1 at 2014-02-20 09:16:45 +0530
+Processing by Admin::AccountController#new as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `admin_users`[0m
+  Rendered admin/account/_form.html.erb (6.6ms)
+  Rendered admin/account/new.html.erb within layouts/admin/session (16.5ms)
+  Rendered admin/shared/_head.html.erb (129.9ms)
+Completed 200 OK in 285ms (Views: 161.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:16:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:16:46 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:16:46 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:16:46 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:16:46 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:16:46 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:16:46 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:16:46 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:16:46 +0530
+
+
+Started POST "/admin/account" for 127.0.0.1 at 2014-02-20 09:16:52 +0530
+Processing by Admin::AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q+1mHv+fQP4DGxp1UvB91/S2Rnz/k0eia3jbU/26jzk=", "admin_user"=>{"email"=>"ra"}, "commit"=>"Sign up"}
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM `admin_users`
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAdminUser Exists (34.3ms)[0m  SELECT 1 AS one FROM `admin_users` WHERE `admin_users`.`email` = BINARY 'ra' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/admin/account/new
+Completed 302 Found in 392ms (ActiveRecord: 35.5ms)
+
+
+Started GET "/admin/account/new" for 127.0.0.1 at 2014-02-20 09:16:52 +0530
+Processing by Admin::AccountController#new as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `admin_users`
+  Rendered admin/account/_form.html.erb (1.0ms)
+  Rendered admin/account/new.html.erb within layouts/admin/session (5.2ms)
+  Rendered admin/shared/_head.html.erb (8.3ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:16:52 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:16:52 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:16:52 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:16:52 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:16:52 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:16:52 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:16:52 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:16:53 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:16:53 +0530
+
+
+Started POST "/admin/account" for 127.0.0.1 at 2014-02-20 09:17:05 +0530
+Processing by Admin::AccountController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q+1mHv+fQP4DGxp1UvB91/S2Rnz/k0eia3jbU/26jzk=", "admin_user"=>{"email"=>"ranjith@gmail.com"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `admin_users`[0m
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mAdminUser Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM `admin_users` WHERE `admin_users`.`email` = BINARY 'ranjith@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (309.9ms)[0m  INSERT INTO `admin_users` (`created_at`, `email`, `password_digest`, `preferences`, `role`, `status`, `token`, `updated_at`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Thu, 20 Feb 2014 03:47:05 UTC +00:00], ["email", "ranjith@gmail.com"], ["password_digest", "$2a$10$KIuOkY9q1ZSjAcf5N6tPZexBg7ZMuyYKWw5T0H0TY/bV.FgP90Ypy"], ["preferences", nil], ["role", "admin"], ["status", true], ["token", "3211a9bdda85-3694310eba02"], ["updated_at", Thu, 20 Feb 2014 03:47:05 UTC +00:00]]
+  [1m[36m (60.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/admin/account/3211a9bdda85-3694310eba02
+Completed 302 Found in 588ms (ActiveRecord: 371.7ms)
+
+
+Started GET "/admin/account/3211a9bdda85-3694310eba02" for 127.0.0.1 at 2014-02-20 09:17:05 +0530
+Processing by Admin::AccountController#show as HTML
+  Parameters: {"id"=>"3211a9bdda85-3694310eba02"}
+  [1m[35mAdminUser Load (0.7ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`token` = '3211a9bdda85-3694310eba02' LIMIT 1
+Redirected to http://localhost:3000/admin/admin_users/edit/1
+Completed 302 Found in 28ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/admin_users/edit/1" for 127.0.0.1 at 2014-02-20 09:17:05 +0530
+Processing by Admin::AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (1.1ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mAdminUser Load (0.9ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = ? LIMIT 1  [["id", "1"]]
+  Rendered admin/resources/_edit.html.erb (0.7ms)
+  Rendered admin/resources/_form_javascripts.html.erb (0.5ms)
+  Rendered helpers/admin/resources/_errors.html.erb (3.7ms)
+  Rendered admin/templates/_string.html.erb (127.8ms)
+  Rendered admin/templates/_string.html.erb (8.7ms)
+  Rendered admin/templates/_selector.html.erb (4.8ms)
+  Rendered admin/templates/_string.html.erb (0.7ms)
+  Rendered admin/templates/_password.html.erb (7.1ms)
+  Rendered admin/templates/_password.html.erb (1.2ms)
+  Rendered admin/templates/_selector.html.erb (1.5ms)
+  Rendered admin/templates/_boolean.html.erb (6.6ms)
+  Rendered admin/resources/_form.html.erb (200.9ms)
+  Rendered admin/shared/_modals.html.erb (13.2ms)
+  Rendered admin/resources/edit.html.erb within layouts/admin/base (234.5ms)
+  Rendered admin/shared/_head.html.erb (7.5ms)
+  Rendered helpers/admin/base/_apps.html.erb (43.9ms)
+  Rendered helpers/admin/base/_login_info.html.erb (4.0ms)
+  Rendered helpers/admin/resources/_sidebar.html.erb (6.2ms)
+Completed 200 OK in 662ms (Views: 642.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:17:06 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:17:06 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:17:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:17:07 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:17:07 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:17:07 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:17:07 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:17:07 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:17:07 +0530
+
+
+Started PATCH "/admin/admin_users/update/1" for 127.0.0.1 at 2014-02-20 09:17:53 +0530
+Processing by Admin::AdminUsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q+1mHv+fQP4DGxp1UvB91/S2Rnz/k0eia3jbU/26jzk=", "admin_user"=>{"first_name"=>"testuser", "last_name"=>"user", "role"=>"admin", "email"=>"ranjith@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "locale"=>"en", "status"=>"1"}, "_save"=>"Save", "id"=>"1"}
+  [1m[36mAdminUser Load (8.6ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = ? LIMIT 1  [["id", "1"]]
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAdminUser Exists (0.7ms)[0m  SELECT 1 AS one FROM `admin_users` WHERE (`admin_users`.`email` = BINARY 'ranjith@gmail.com' AND `admin_users`.`id` != 1) LIMIT 1
+  [1m[36mSQL (317.4ms)[0m  [1mUPDATE `admin_users` SET `first_name` = ?, `last_name` = ?, `password_digest` = ?, `preferences` = ?, `token` = ?, `updated_at` = ? WHERE `admin_users`.`id` = 1[0m  [["first_name", "testuser"], ["last_name", "user"], ["password_digest", "$2a$10$YNCGS9zoftmtE0S3Sqval..LTXL7SjDYwP7X.PAQWZVXEeoVKJ.02"], ["preferences", "---\n:locale: en\n"], ["token", "c184414980ef-90fb3011c929"], ["updated_at", Thu, 20 Feb 2014 03:47:53 UTC +00:00]]
+  [1m[35m (91.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/admin/admin_users
+Completed 302 Found in 667ms (ActiveRecord: 419.0ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2014-02-20 09:17:54 +0530
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.8ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  Rendered admin/resources/_index.html.erb (0.5ms)
+  Rendered helpers/admin/resources/_search.html.erb (3.4ms)
+  Rendered helpers/admin/resources/_filters.html.erb (2.7ms)
+  [1m[35m (1.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 25 OFFSET 0) subquery_for_count
+  [1m[36mAdminUser Load (1.0ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` LIMIT 25 OFFSET 0[0m
+  Rendered helpers/admin/resources/_table.html.erb (13.5ms)
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `admin_users`
+  Rendered admin/resources/_pagination.html.erb (1.2ms)
+  Rendered admin/resources/index.html.erb within layouts/admin/base (74.8ms)
+  Rendered admin/shared/_head.html.erb (6.0ms)
+  Rendered helpers/admin/base/_apps.html.erb (12.3ms)
+  Rendered helpers/admin/base/_login_info.html.erb (5.7ms)
+  Rendered helpers/admin/resources/_sidebar.html.erb (1.0ms)
+Completed 200 OK in 136ms (Views: 110.0ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:17:54 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:17:54 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:17:54 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:17:54 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:17:54 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:17:54 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:17:54 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:17:54 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:17:54 +0530
+
+
+Started GET "/admin/admin_users/new" for 127.0.0.1 at 2014-02-20 09:18:05 +0530
+Processing by Admin::AdminUsersController#new as HTML
+  [1m[36mAdminUser Load (0.7ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  Rendered admin/resources/_new.html.erb (1.1ms)
+  Rendered admin/resources/_form_javascripts.html.erb (0.1ms)
+  Rendered helpers/admin/resources/_errors.html.erb (0.1ms)
+  Rendered admin/templates/_string.html.erb (0.8ms)
+  Rendered admin/templates/_string.html.erb (0.6ms)
+  Rendered admin/templates/_selector.html.erb (1.4ms)
+  Rendered admin/templates/_string.html.erb (0.5ms)
+  Rendered admin/templates/_password.html.erb (0.5ms)
+  Rendered admin/templates/_password.html.erb (0.5ms)
+  Rendered admin/templates/_selector.html.erb (1.2ms)
+  Rendered admin/templates/_boolean.html.erb (0.9ms)
+  Rendered admin/resources/_form.html.erb (43.9ms)
+  Rendered admin/shared/_modals.html.erb (8.6ms)
+  Rendered admin/resources/new.html.erb within layouts/admin/base (66.6ms)
+  Rendered admin/shared/_head.html.erb (5.5ms)
+  Rendered helpers/admin/base/_apps.html.erb (11.0ms)
+  Rendered helpers/admin/base/_login_info.html.erb (1.5ms)
+  Rendered helpers/admin/resources/_sidebar.html.erb (1.4ms)
+Completed 200 OK in 123ms (Views: 98.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:06 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:06 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:06 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:06 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:06 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:06 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:06 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:06 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:06 +0530
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-20 09:18:08 +0530
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  Rendered admin/dashboard/widgets/_default.html.erb (105.1ms)
+  Rendered admin/dashboard/index.html.erb within layouts/admin/base (109.2ms)
+  Rendered admin/shared/_head.html.erb (5.1ms)
+  Rendered helpers/admin/base/_apps.html.erb (13.4ms)
+  Rendered helpers/admin/base/_login_info.html.erb (1.4ms)
+Completed 200 OK in 156ms (Views: 138.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:09 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:09 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:09 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:09 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:09 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:09 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:09 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:09 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:09 +0530
+
+
+Started GET "/admin/devise_users" for 127.0.0.1 at 2014-02-20 09:18:12 +0530
+Processing by Admin::DeviseUsersController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  Rendered admin/resources/_index.html.erb (0.3ms)
+  [1m[35m (0.8ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `devise_users` LIMIT 25 OFFSET 0) subquery_for_count
+  Rendered admin/resources/index.html.erb within layouts/admin/base (12.1ms)
+  Rendered admin/shared/_head.html.erb (6.0ms)
+  Rendered helpers/admin/base/_apps.html.erb (8.9ms)
+  Rendered helpers/admin/base/_login_info.html.erb (1.8ms)
+  Rendered helpers/admin/resources/_sidebar.html.erb (1.2ms)
+Completed 200 OK in 93ms (Views: 54.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:12 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:12 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:12 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:12 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:12 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:12 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:12 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:12 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:12 +0530
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-20 09:18:16 +0530
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  Rendered admin/dashboard/widgets/_default.html.erb (9.9ms)
+  Rendered admin/dashboard/index.html.erb within layouts/admin/base (11.5ms)
+  Rendered admin/shared/_head.html.erb (12.4ms)
+  Rendered helpers/admin/base/_apps.html.erb (8.2ms)
+  Rendered helpers/admin/base/_login_info.html.erb (2.1ms)
+Completed 200 OK in 63ms (Views: 44.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:16 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:16 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:16 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:16 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:16 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:16 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:16 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:16 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:16 +0530
+
+
+Started DELETE "/admin/session" for 127.0.0.1 at 2014-02-20 09:18:18 +0530
+Processing by Admin::SessionController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q+1mHv+fQP4DGxp1UvB91/S2Rnz/k0eia3jbU/26jzk="}
+Redirected to http://localhost:3000/admin/session/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/session/new" for 127.0.0.1 at 2014-02-20 09:18:19 +0530
+Processing by Admin::SessionController#new as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `admin_users`
+  Rendered admin/account/_form.html.erb (1.4ms)
+  Rendered admin/session/new.html.erb within layouts/admin/session (6.4ms)
+  Rendered admin/shared/_head.html.erb (11.2ms)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:19 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:19 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:19 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:19 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:19 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:19 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:19 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:19 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:19 +0530
+
+
+Started POST "/admin/session" for 127.0.0.1 at 2014-02-20 09:18:32 +0530
+Processing by Admin::SessionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q+1mHv+fQP4DGxp1UvB91/S2Rnz/k0eia3jbU/26jzk=", "admin_user"=>{"email"=>"ranjith@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36m (5.0ms)[0m  [1mSELECT COUNT(*) FROM `admin_users`[0m
+  [1m[35mAdminUser Load (1.0ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`email` = 'ranjith@gmail.com' AND `admin_users`.`status` = 1 LIMIT 1
+Redirected to http://localhost:3000/admin/dashboard
+Completed 302 Found in 216ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-20 09:18:32 +0530
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (2.9ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  Rendered admin/dashboard/widgets/_default.html.erb (8.5ms)
+  Rendered admin/dashboard/index.html.erb within layouts/admin/base (10.1ms)
+  Rendered admin/shared/_head.html.erb (5.7ms)
+  Rendered helpers/admin/base/_apps.html.erb (106.6ms)
+  Rendered helpers/admin/base/_login_info.html.erb (1.5ms)
+Completed 200 OK in 163ms (Views: 135.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:32 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:32 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:32 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:32 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:32 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:32 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:32 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:32 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:32 +0530
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2014-02-20 09:18:36 +0530
+Processing by Admin::CategoriesController#index as HTML
+  [1m[35mAdminUser Load (1.2ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  Rendered admin/resources/_index.html.erb (0.1ms)
+  [1m[36m (3.7ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `categories` LIMIT 25 OFFSET 0) subquery_for_count[0m
+  Rendered admin/resources/index.html.erb within layouts/admin/base (18.2ms)
+  Rendered admin/shared/_head.html.erb (8.1ms)
+  Rendered helpers/admin/base/_apps.html.erb (13.9ms)
+  Rendered helpers/admin/base/_login_info.html.erb (3.5ms)
+  Rendered helpers/admin/resources/_sidebar.html.erb (1.1ms)
+Completed 200 OK in 97ms (Views: 56.9ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:36 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:36 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:36 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:37 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:37 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:37 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:37 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:37 +0530
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-20 09:18:39 +0530
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  Rendered admin/dashboard/widgets/_default.html.erb (7.3ms)
+  Rendered admin/dashboard/index.html.erb within layouts/admin/base (8.7ms)
+  Rendered admin/shared/_head.html.erb (9.0ms)
+  Rendered helpers/admin/base/_apps.html.erb (7.3ms)
+  Rendered helpers/admin/base/_login_info.html.erb (1.7ms)
+Completed 200 OK in 58ms (Views: 39.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:40 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:40 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:40 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:40 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:40 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:40 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:40 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:40 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:40 +0530
+
+
+Started GET "/admin/devise_users" for 127.0.0.1 at 2014-02-20 09:18:42 +0530
+Processing by Admin::DeviseUsersController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  Rendered admin/resources/_index.html.erb (0.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `devise_users` LIMIT 25 OFFSET 0) subquery_for_count
+  Rendered admin/resources/index.html.erb within layouts/admin/base (7.3ms)
+  Rendered admin/shared/_head.html.erb (5.2ms)
+  Rendered helpers/admin/base/_apps.html.erb (9.9ms)
+  Rendered helpers/admin/base/_login_info.html.erb (1.7ms)
+  Rendered helpers/admin/resources/_sidebar.html.erb (0.9ms)
+Completed 200 OK in 121ms (Views: 103.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:42 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:42 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:42 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:42 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:42 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:42 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:42 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:42 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:42 +0530
+
+
+Started GET "/admin/devise_users/new" for 127.0.0.1 at 2014-02-20 09:18:44 +0530
+Processing by Admin::DeviseUsersController#new as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  Rendered admin/resources/_new.html.erb (0.1ms)
+  Rendered admin/resources/_form_javascripts.html.erb (0.1ms)
+  Rendered helpers/admin/resources/_errors.html.erb (0.1ms)
+  Rendered admin/templates/_string.html.erb (0.7ms)
+  Rendered admin/templates/_password.html.erb (0.6ms)
+  Rendered admin/templates/_password.html.erb (0.5ms)
+  Rendered admin/templates/_password.html.erb (0.5ms)
+  Rendered admin/templates/_string.html.erb (0.5ms)
+  Rendered admin/templates/_datetime.html.erb (1.8ms)
+  Rendered admin/templates/_datetime.html.erb (0.6ms)
+  Rendered admin/templates/_string.html.erb (0.5ms)
+  Rendered admin/templates/_string.html.erb (0.7ms)
+  Rendered admin/resources/_form.html.erb (173.0ms)
+  Rendered admin/shared/_modals.html.erb (10.1ms)
+  Rendered admin/resources/new.html.erb within layouts/admin/base (204.1ms)
+  Rendered admin/shared/_head.html.erb (8.5ms)
+  Rendered helpers/admin/base/_apps.html.erb (10.3ms)
+  Rendered helpers/admin/base/_login_info.html.erb (1.5ms)
+  Rendered helpers/admin/resources/_sidebar.html.erb (1.0ms)
+Completed 200 OK in 263ms (Views: 238.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:45 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:45 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:45 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:45 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:18:45 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:45 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:45 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:18:45 +0530
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2014-02-20 09:19:02 +0530
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.4ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  Rendered admin/resources/_index.html.erb (0.1ms)
+  Rendered helpers/admin/resources/_search.html.erb (1.4ms)
+  Rendered helpers/admin/resources/_filters.html.erb (2.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 25 OFFSET 0) subquery_for_count[0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` LIMIT 25 OFFSET 0
+  Rendered helpers/admin/resources/_table.html.erb (10.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `admin_users`[0m
+  Rendered admin/resources/_pagination.html.erb (0.1ms)
+  Rendered admin/resources/index.html.erb within layouts/admin/base (43.4ms)
+  Rendered admin/shared/_head.html.erb (10.2ms)
+  Rendered helpers/admin/base/_apps.html.erb (7.6ms)
+  Rendered helpers/admin/base/_login_info.html.erb (2.2ms)
+  Rendered helpers/admin/resources/_sidebar.html.erb (1.2ms)
+Completed 200 OK in 97ms (Views: 76.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:02 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:02 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:02 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:02 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:02 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:03 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:03 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:03 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:03 +0530
+
+
+Started GET "/admin/admin_users/edit/1" for 127.0.0.1 at 2014-02-20 09:19:07 +0530
+Processing by Admin::AdminUsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAdminUser Load (6.9ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  [1m[36mAdminUser Load (4.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered admin/resources/_edit.html.erb (0.1ms)
+  Rendered admin/resources/_form_javascripts.html.erb (0.1ms)
+  Rendered helpers/admin/resources/_errors.html.erb (0.1ms)
+  Rendered admin/templates/_string.html.erb (0.8ms)
+  Rendered admin/templates/_string.html.erb (0.5ms)
+  Rendered admin/templates/_selector.html.erb (3.9ms)
+  Rendered admin/templates/_string.html.erb (0.6ms)
+  Rendered admin/templates/_password.html.erb (0.5ms)
+  Rendered admin/templates/_password.html.erb (0.6ms)
+  Rendered admin/templates/_selector.html.erb (1.7ms)
+  Rendered admin/templates/_boolean.html.erb (0.7ms)
+  Rendered admin/resources/_form.html.erb (115.6ms)
+  Rendered admin/shared/_modals.html.erb (7.5ms)
+  Rendered admin/resources/edit.html.erb within layouts/admin/base (146.3ms)
+  Rendered admin/shared/_head.html.erb (10.2ms)
+  Rendered helpers/admin/base/_apps.html.erb (9.9ms)
+  Rendered helpers/admin/base/_login_info.html.erb (1.4ms)
+  Rendered helpers/admin/resources/_sidebar.html.erb (1.2ms)
+Completed 200 OK in 214ms (Views: 181.6ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:08 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:08 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:08 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:08 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:08 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:08 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:08 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:08 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:08 +0530
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2014-02-20 09:19:11 +0530
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  Rendered admin/resources/_index.html.erb (0.1ms)
+  Rendered helpers/admin/resources/_search.html.erb (6.7ms)
+  Rendered helpers/admin/resources/_filters.html.erb (1.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 25 OFFSET 0) subquery_for_count[0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` LIMIT 25 OFFSET 0
+  Rendered helpers/admin/resources/_table.html.erb (5.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `admin_users`[0m
+  Rendered admin/resources/_pagination.html.erb (0.1ms)
+  Rendered admin/resources/index.html.erb within layouts/admin/base (53.3ms)
+  Rendered admin/shared/_head.html.erb (6.5ms)
+  Rendered helpers/admin/base/_apps.html.erb (13.5ms)
+  Rendered helpers/admin/base/_login_info.html.erb (1.4ms)
+  Rendered helpers/admin/resources/_sidebar.html.erb (1.3ms)
+Completed 200 OK in 103ms (Views: 86.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2014-02-20 09:19:11 +0530
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  Rendered admin/resources/_index.html.erb (0.1ms)
+  Rendered helpers/admin/resources/_search.html.erb (1.1ms)
+  Rendered helpers/admin/resources/_filters.html.erb (1.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `admin_users` LIMIT 25 OFFSET 0) subquery_for_count[0m
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` LIMIT 25 OFFSET 0
+  Rendered helpers/admin/resources/_table.html.erb (4.7ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `admin_users`[0m
+  Rendered admin/resources/_pagination.html.erb (0.1ms)
+  Rendered admin/resources/index.html.erb within layouts/admin/base (35.7ms)
+  Rendered admin/shared/_head.html.erb (5.2ms)
+  Rendered helpers/admin/base/_apps.html.erb (12.5ms)
+  Rendered helpers/admin/base/_login_info.html.erb (2.9ms)
+  Rendered helpers/admin/resources/_sidebar.html.erb (2.4ms)
+Completed 200 OK in 84ms (Views: 68.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:12 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:12 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:12 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:12 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:12 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:12 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:12 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:12 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:12 +0530
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-20 09:19:17 +0530
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (4.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  Rendered admin/dashboard/widgets/_default.html.erb (12.8ms)
+  Rendered admin/dashboard/index.html.erb within layouts/admin/base (16.4ms)
+  Rendered admin/shared/_head.html.erb (11.9ms)
+  Rendered helpers/admin/base/_apps.html.erb (8.0ms)
+  Rendered helpers/admin/base/_login_info.html.erb (1.6ms)
+Completed 200 OK in 78ms (Views: 54.6ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:17 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:17 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:17 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:17 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:17 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:17 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:17 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:17 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:17 +0530
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2014-02-20 09:19:21 +0530
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  Rendered admin/resources/_index.html.erb (0.1ms)
+  [1m[35m (0.6ms)[0m  SELECT COUNT(count_column) FROM (SELECT 1 AS count_column FROM `users` LIMIT 25 OFFSET 0) subquery_for_count
+  Rendered admin/resources/index.html.erb within layouts/admin/base (8.0ms)
+  Rendered admin/shared/_head.html.erb (5.8ms)
+  Rendered helpers/admin/base/_apps.html.erb (13.9ms)
+  Rendered helpers/admin/base/_login_info.html.erb (1.5ms)
+  Rendered helpers/admin/resources/_sidebar.html.erb (1.0ms)
+Completed 200 OK in 140ms (Views: 47.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:21 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:21 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:21 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:21 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:21 +0530
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:21 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:21 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:21 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:21 +0530
+
+
+Started GET "/admin/users/new" for 127.0.0.1 at 2014-02-20 09:19:23 +0530
+Processing by Admin::UsersController#new as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1mSELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1[0m
+  Rendered admin/resources/_new.html.erb (0.1ms)
+  Rendered admin/resources/_form_javascripts.html.erb (5.3ms)
+  Rendered helpers/admin/resources/_errors.html.erb (0.2ms)
+  Rendered admin/templates/_string.html.erb (0.7ms)
+  Rendered admin/templates/_string.html.erb (0.6ms)
+  Rendered admin/templates/_string.html.erb (0.5ms)
+  Rendered admin/templates/_string.html.erb (0.5ms)
+  Rendered admin/templates/_password.html.erb (0.6ms)
+  Rendered admin/templates/_string.html.erb (0.5ms)
+  Rendered admin/templates/_password.html.erb (0.5ms)
+  Rendered admin/templates/_password.html.erb (1.3ms)
+  Rendered admin/templates/_string.html.erb (0.8ms)
+  Rendered admin/templates/_time.html.erb (39.7ms)
+  Rendered admin/templates/_time.html.erb (5.3ms)
+  Rendered admin/templates/_string.html.erb (0.6ms)
+  Rendered admin/templates/_string.html.erb (0.5ms)
+  Rendered admin/templates/_string.html.erb (0.5ms)
+  Rendered admin/templates/_boolean.html.erb (0.7ms)
+  Rendered admin/templates/_string.html.erb (0.5ms)
+  Rendered admin/templates/_time.html.erb (13.3ms)
+  Rendered admin/templates/_time.html.erb (5.8ms)
+  Rendered admin/templates/_string.html.erb (0.9ms)
+  Rendered admin/templates/_string.html.erb (1.2ms)
+  Rendered admin/templates/_string.html.erb (0.6ms)
+  Rendered admin/templates/_time.html.erb (4.7ms)
+  Rendered admin/templates/_string.html.erb (0.5ms)
+  Rendered admin/resources/_form.html.erb (232.5ms)
+  Rendered admin/shared/_modals.html.erb (37.6ms)
+  Rendered admin/resources/new.html.erb within layouts/admin/base (287.3ms)
+  Rendered admin/shared/_head.html.erb (5.3ms)
+  Rendered helpers/admin/base/_apps.html.erb (10.6ms)
+  Rendered helpers/admin/base/_login_info.html.erb (8.3ms)
+  Rendered helpers/admin/resources/_sidebar.html.erb (1.0ms)
+Completed 200 OK in 461ms (Views: 325.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:24 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:24 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:24 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:24 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:24 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:24 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:24 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:24 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:24 +0530
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-02-20 09:19:30 +0530
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.3ms)[0m  SELECT `admin_users`.* FROM `admin_users` WHERE `admin_users`.`id` = 1 LIMIT 1
+  Rendered admin/dashboard/widgets/_default.html.erb (9.7ms)
+  Rendered admin/dashboard/index.html.erb within layouts/admin/base (11.2ms)
+  Rendered admin/shared/_head.html.erb (5.4ms)
+  Rendered helpers/admin/base/_apps.html.erb (11.6ms)
+  Rendered helpers/admin/base/_login_info.html.erb (1.4ms)
+Completed 200 OK in 156ms (Views: 39.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/css/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:31 +0530
+
+
+Started GET "/assets/typus/application.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:31 +0530
+
+
+Started GET "/assets/js/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:31 +0530
+
+
+Started GET "/assets/typus/jquery-1.8.3-min.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:31 +0530
+
+
+Started GET "/assets/typus/overrides.css?body=1" for 127.0.0.1 at 2014-02-20 09:19:31 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:31 +0530
+
+
+Started GET "/assets/typus/jquery.application.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:31 +0530
+
+
+Started GET "/assets/typus/custom.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:31 +0530
+
+
+Started GET "/assets/typus/application.js?body=1" for 127.0.0.1 at 2014-02-20 09:19:31 +0530
